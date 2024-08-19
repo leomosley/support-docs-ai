@@ -1,6 +1,12 @@
 import { GoogleLogin } from "@/components/login/google-login";
+import { getServerSession } from "next-auth";
+import { AUTH_OPTIONS } from "../api/auth/[...nextauth]/route";
+import { redirect } from "next/navigation";
 
-export default function Login() {
+export default async function Login() {
+  const session = await getServerSession(AUTH_OPTIONS);
+
+  if (session) return redirect('/home');
 
   return (
     <main className="bg-grid flex flex-col justify-center min-h-screen">
