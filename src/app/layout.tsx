@@ -1,11 +1,11 @@
-import React, { memo } from "react";
+import React from "react";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { cn } from "@/client/components/common/utils";
 import { PRODUCT_DESCRIPTION } from "@/client/components/common/constants";
 import { SessionProvider } from "@/client/components/common/providers/session-provider";
 import "./globals.css";
-import Header from "@/client/components/header";
+import Header from "@/components/common/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
