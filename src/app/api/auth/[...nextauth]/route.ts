@@ -3,7 +3,7 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { saveUserToDB } from "@/server/integrations/database";
 
-const options = {
+export const options = {
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_ID ?? "",
