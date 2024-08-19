@@ -9,7 +9,7 @@ export default async function Login() {
   if (session) return redirect('/home');
 
   return (
-    <main className="bg-grid flex flex-col justify-center min-h-screen">
+    <main className="bg-grid flex flex-col justify-center">
       <div className="flex flex-col mt-24 items-center flex-1">
         <section>
           <div className="flex flex-col justify-center items-center mx-auto">
