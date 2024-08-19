@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useCallback } from "react";
 import isEmpty from "lodash/isEmpty";
 import mixpanel from "mixpanel-browser";

@@ -46,7 +46,7 @@ export default memo(function SearchBar({
 
   return (
     <>
-      <div className="fixed bottom-6 p-4 w-5/12">
+      <div className="fixed bottom-6 p-4 w-5/12 mb-6">
         <form onSubmit={handleSubmit}>
           <div className="relative flex items-center rounded-full border border-gray-400 shadow-lg bg-white">
             <div className="absolute left-4 top-4 flex items-center">
