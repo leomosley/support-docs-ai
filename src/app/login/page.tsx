@@ -1,4 +1,4 @@
-import { GoogleLogin } from "@/components/login/google-login";
+import { GoogleLogin } from "@/components/auth/google-login";
 import { getServerSession } from "next-auth";
 import { AUTH_OPTIONS } from "../api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
