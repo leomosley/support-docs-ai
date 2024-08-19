@@ -6,7 +6,7 @@ import { SignOut } from "@/components/auth/sign-out";
 import Link from "next/link";
 import { Avatar } from "./avatar";
 
-export default async function Header() {
+export async function Header() {
   const session = await getServerSession(AUTH_OPTIONS);
 
   return (
