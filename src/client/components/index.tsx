@@ -2,7 +2,7 @@ import MarkdownRender from "./markdown-renderer";
 import Sidebar from "../components/side-bar";
 import SearchBar from "../components/search";
 import Header from "./header";
-import SourceDocumentLoader from "../components/document-loader";
+import SourceDocumentLoader from "../../components/document-loader";
 import DocSearch from "../components/doc-search";
 import PoweredBy from "./search/powered-by";
 import { ErrorMessage } from "./error-message";

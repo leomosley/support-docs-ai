@@ -1,12 +1,12 @@
-import React, { memo } from "react";
 import DocumentCard from "./document-card";
-import { type DocumentMetadata } from "../common/types";
 
-type Props = {
-  documents: Array<DocumentMetadata>;
+type DocumentMetadata = {
+  documentTitle: string;
+  src: string;
 };
 
-export default memo(function DocumentList({ documents }: Props) {
+
+export function DocumentList({ documents }: { documents: DocumentMetadata[] }) {
   return (
     <div className="flex gap-4">
       {documents?.map((documentMeta: DocumentMetadata) => {
@@ -19,4 +19,4 @@ export default memo(function DocumentList({ documents }: Props) {
       })}
     </div>
   );
-});
+};

@@ -1,21 +1,19 @@
 "use client";
 
-import React, { memo } from "react";
+import React from "react";
 import { FileText } from "lucide-react";
-import useSourceFetch from "./use-source-fetch";
-import DocumentList from "./document-list";
+import useSourceFetch from "@/hooks/use-source-fetch";
+import { DocumentList } from "./document-list";
 
-type Props = {
-  title: string;
-  query: string;
-  options?: {};
-};
-
-export default memo(function SourceDocumentLoader({
+export function SourceDocumentLoader({
   title,
   query,
   options,
-}: Props) {
+}: {
+  title: string;
+  query: string;
+  options?: {};
+}) {
   const { data, loading } = useSourceFetch({ query, options });
 
   return (
@@ -40,4 +38,4 @@ export default memo(function SourceDocumentLoader({
       )}
     </div>
   );
-});
+};

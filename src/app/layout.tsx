@@ -25,9 +25,9 @@ export default function RootLayout({
       <body className={cn(inter.className, "leading-relaxed text-base")}>
         <SessionProvider>
           <Header />
-          <div className="flex flex-grow">
+          <div className="flex">
             <Sidebar />
-            <main className="flex flex-grow items-center flex-col ml-[12%] mr-[8%] mx-auto w-1/2 my-4 overflow-y-auto">
+            <main className="flex flex-grow">
               {children}
             </main>
           </div>

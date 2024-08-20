@@ -2,13 +2,14 @@
 
 import React, { memo, useCallback } from "react";
 import { ExternalLink } from "lucide-react";
-import { type DocumentMetadata } from "../common/types";
 
-type Props = {
-  documentMeta: DocumentMetadata;
+type DocumentMetadata = {
+  documentTitle: string;
+  src: string;
 };
 
-export default memo(function DocumentCard({ documentMeta }: Props) {
+
+export default memo(function DocumentCard({ documentMeta }: { documentMeta: DocumentMetadata }) {
   const onClick = useCallback(() => {
     window.open(documentMeta.src, "_blank");
   }, []);
