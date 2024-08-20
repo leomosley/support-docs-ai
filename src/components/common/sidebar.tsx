@@ -36,7 +36,7 @@ export async function Sidebar() {
       </div>
       <SideBarNav />
       <div className="p-4 mt-auto border-t border-gray-200">
-        <p className="text-sm text-gray-600 mb-2 min-h-fit">
+        <p className="text-sm text-gray-600">
           {"Transform Your Documents into an Interactive & Shareable Knowledge Hubs using AI."}
         </p>
       </div>
