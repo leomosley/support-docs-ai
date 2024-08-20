@@ -3,9 +3,9 @@
 import { useRef, useEffect } from "react";
 import { useChat } from "ai/react";
 import { MessageList } from "@/client/components/messages";
-import clsx from "clsx";
 import GenerateBasic from "@/client/components/generate/generate-basic";
 import { SearchBar } from "@/client/components";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   const containerRef = useRef<any>(null);
@@ -21,7 +21,7 @@ export default function Home() {
   }, [messages]);
 
   return (
-    <div className={clsx(
+    <div className={cn(
       "flex flex-col",
       messages?.length === 0 && "bg-custom bg-cover"
     )}>

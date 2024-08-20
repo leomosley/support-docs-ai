@@ -6,7 +6,7 @@ import { SessionProvider } from "@/client/components/common/providers/session-pr
 import "./globals.css";
 import { Header } from "@/components/common/header";
 import { Sidebar } from "@/components/common/sidebar";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(inter.className, "leading-relaxed text-base")}>
+      <body className={cn(inter.className, "leading-relaxed text-base")}>
         <SessionProvider>
           <Header />
           <div className="flex flex-grow">
