@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { PRODUCT_DESCRIPTION } from "@/client/components/common/constants";
 import { SessionProvider } from "@/client/components/common/providers/session-provider";
 import "./globals.css";
-import { Header } from "@/components/common/header";
-import { Sidebar } from "@/components/common/sidebar";
+import { Header } from "@/components/nav/header";
+import { Sidebar } from "@/components/nav/sidebar";
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
