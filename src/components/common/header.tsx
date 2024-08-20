@@ -16,6 +16,7 @@ export async function Header() {
           <Link
             className="text-gray-800 mr-8"
             href="/quick-start"
+            prefetch={true}
           >
             Quick Start
           </Link>
@@ -29,6 +30,7 @@ export async function Header() {
               <Link
                 className="flex cursor-pointer border border-gray-200 hover:bg-gray-100 py-2 px-4 rounded-lg items-center gap-2"
                 href="/admin"
+                prefetch={true}
               >
                 <FolderDot size={18} />
                 <span>Documents Manager</span>
