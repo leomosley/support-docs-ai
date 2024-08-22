@@ -12,7 +12,7 @@ export async function Sidebar() {
   const PRODUCT_LOGO = process.env.NEXT_PUBLIC_PRODUCT_LOGO ?? "";
 
   return session && (
-    <aside className="flex flex-col h-screen w-72 bg-gray-100 -mt-16 border border-slate-200 z-50">
+    <aside className="fixed flex flex-col h-screen w-72 bg-gray-100 -mt-16 border border-slate-200 z-50">
       <div className="p-4 mt-2">
         <div className="flex items-center mb-4 gap-2">
           {PRODUCT_LOGO ? (

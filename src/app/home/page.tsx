@@ -2,7 +2,6 @@
 
 import { useRef, useEffect } from "react";
 import { useChat } from "ai/react";
-import { cn } from "@/lib/utils";
 import { Chat } from "@/components/chat";
 import { ChatBar } from "@/components/chat/chat-bar";
 import { GenerateBasic } from "@/components/chat/generate-basic";
@@ -22,7 +21,7 @@ export default function Home() {
 
   return (
     <div
-      className="flex flex-grow items-center flex-col -ml-56 [mr-auto my-4 overflow-y-auto"
+      className="flex flex-grow items-center flex-col p-4 overflow-y-auto"
       ref={containerRef}
     >
       <Chat messages={messages} isLoading={rest.isLoading} />

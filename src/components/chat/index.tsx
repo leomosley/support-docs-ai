@@ -11,7 +11,7 @@ export function Chat({
   isLoading: boolean;
 }) {
   return (
-    <div className="flex flex-col mb-32 w-full">
+    <div className="flex flex-col mb-32 w-5/12 p-4">
       {messages.map((message) => (
         <Fragment key={message.id} >
           <div className="my-4" >
