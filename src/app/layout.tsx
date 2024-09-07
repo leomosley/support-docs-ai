@@ -6,7 +6,6 @@ import "./globals.css";
 import { Header } from "@/components/nav/header";
 import { Sidebar } from "@/components/nav/sidebar";
 import { cn } from "@/lib/utils";
-import { SessionProvider } from "@/components/providers/session-provider";
 import AnalyticsProvider from "@/components/providers/analytics-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,16 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "leading-relaxed text-base")}>
-        <SessionProvider>
-          <Header />
-          <div className="flex">
-            <Sidebar />
-            <main className="flex flex-grow">
-              {children}
-            </main>
-          </div>
-          <AnalyticsProvider />
-        </SessionProvider>
+        <Header />
+        <div className="flex">
+          <Sidebar />
+          <main className="flex flex-grow">
+            {children}
+          </main>
+        </div>
+        <AnalyticsProvider />
       </body>
     </html>
   );
